@@ -1,23 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html class="bg-primary_clr-dark scroll-smooth">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="/dist/output.css" rel="stylesheet" />
+        <title>Panorama | Restaurant Sørenga</title>
+        <link rel="icon" href="./img/svg/lobster-black-white.svg">
+        <!-- JS IMPORTS -->
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <style>
+            * {
+                font-family: 'Inter', sans-serif;
+            }
+            /* The Modal (background) */
+            .modal {
+                display: none;
+            }
+
+            /* Modal Content */
+            .modal-content {
+                position: relative;
+                color: #fff;
+                margin: auto;
+                padding: 20px;
+                padding-top: 0;
+                width: fit-content;
+            }
+
+            /* The Close Button */
+            .close {
+                color: #fff;
+                font-size: 28px;
+                position: absolute;
+                top: -44px;
+                right: 10px;
+            }
+
+            .close:hover,
+            .close:focus {
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .close::selection {
+                background-color: transparent;
+            }
+        </style>
     </head>
     <body>
-        <h1 class="hidden">Hello world!</h1>
+        <a name="top" class="absolute top-0"></a>
+        <h1 class="hidden">Panorama | Restaurant Sørenga</h1>
         <main
-            class="bg-primary_clr mx-auto flex h-screen max-w-screen-xl flex-col"
+            class="bg-[url('../src/img/panorama-bar.jpg')] bg-[length:150%_auto] sm:bg-[length:110%_auto] relative bg-scroll bg-no-repeat bg-center mx-auto flex h-screen max-w-screen-xl flex-col"
         >
-            <div class="flex h-2/4 w-full items-end justify-center">
-                <div class="bg-gradient-radial h-20 w-full">
-                    <div class="w-4/5 max-w-lg"></div>
+            <div
+                class="absolute h-full sm:w-28 w-10 bg-fade-out-hero-gradient sm:opacity-100 opacity-70"
+            ></div>
+            <div
+                class="absolute h-full sm:w-28 w-10 bg-fade-out-hero-gradient sm:opacity-100 opacity-70 rotate-180 right-0"
+            ></div>
+            <div
+                class="flex h-2/4 w-full items-end justify-center sm:pb-10 md:pb-10 lg:pb-20"
+            >
+                <div
+                    class="bg-gradient-radial h-20 w-full sm:w-4/6 md:w-3/6 lg:3/5"
+                >
+                    <img
+                        class="w-4/5 max-w-lg mx-auto bg-opacity-10"
+                        src="./img/svg/logo/Panorama-logo.svg"
+                        alt="Panorama logo"
+                    />
                 </div>
             </div>
-            <div class="h-2/4 w-full">
-                <a href="" class="py-2 px-5 uppercase"> booking </a>
+            <div
+                class="h-2/4 w-full flex flex-col justify-start md:pt-4 items-center gap-5 pt-10 lg:pb-0 text-l"
+            >
+                <a
+                    href=""
+                    class="flex justify-center w-40 py-2 uppercase border  hover:rounded-2xl transition-all"
+                    style="border-color: white; color: white"
+                >
+                    booking
+                </a>
+                <div
+                    id="opening-hours"
+                    class="uppercase max-w-fit border hover:rounded-2xl transition-all"
+                    style="border-color: white; color: white"
+                >
+                    <button
+                        id="myBtn"
+                        class="flex justify-center w-40 py-2  uppercase mx-auto"
+                    >
+                        Åpningstider
+                    </button>
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content rounded-2xl">
+                            <span class="close">&times;</span>
+                            <div class="flex justify-center gap-2">
+                                <div class="flex flex-col">
+                                    <p class="text-right">Man - Tor:</p>
+                                    <p class="text-right">Fre - Lør:</p>
+                                    <p class="text-right">Søndag:</p>
+                                </div>
+                                <div class="flex flex-col">
+                                    <p class="">13.00 - 22.00</p>
+                                    <p class="">13.00 - 23.00</p>
+                                    <p class="">13.00 - 22.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a
+                    href="./menu.html"
+                    class="flex justify-center w-40 py-2 uppercase border hover:rounded-2xl transition-all"
+                    style="border-color: white; color: white"
+                >
+                    meny
+                </a>
             </div>
         </main>
+            <footer class="flex flex-col sm:justify-center sm:flex-row flex-wrap  border-t mx-auto p-5 border-primary_clr-light max-w-screen-xl">
+                <div class="flex-col flex w-full sm:border-b sm:border-primary_clr-light">
+                    <h3 class="text-primary_clr-light text-2xl sm:text-4xl text-center">
+                        Panorama Restaurant:
+                    </h3>
+                    <a  id="adress"
+                        target="_blank"
+                        href="https://www.google.com/maps/place/Panorama+Restaurant/@59.9017113,10.7201153,13z/data=!4m9!1m2!2m1!1spanorama+s%C3%B8renga!3m5!1s0x46416f591d689f67:0xf70091e7114a007d!8m2!3d59.9032902!4d10.7543291!15sChFwYW5vcmFtYSBzw7hyZW5nYZIBCnJlc3RhdXJhbnTgAQA"
+                        class="
+                        relative text-secondary-default text-lg opacity-70 mt-[-2px] width-fit mx-auto pb-1 sm:pb-5"
+                        >
+                        Sørengkaia 69, 0194 Oslo
+                        <img class="absolute top-1 right-[-20px] h-5" src="./img/svg/pin.svg" alt="pinpoint">
+                    </a>
+                </div>
+                <div class="w-full h-px sm:hidden bg-primary_clr-light mt-1 max-w"></div>
+                <div class="flex-col flex-1 flex max-w-xs py-5">
+                    <h4 class="text-primary_clr-light text-xl">Kontakt Oss:</h4>
+                    <p class="text-secondary-default text-lg opacity-50 pl-2">
+                        telefon: 902 64 422
+                    </p>
+                    <p
+                        class="text-secondary-default text-lg opacity-50 pl-2 pt-[2px] mt-[-10px]"
+                    >
+                        e-post: panorama@something.no
+                    </p>
+                </div>
+                    <div class="w-full h-px sm:hidden bg-primary_clr-light mt-1"></div>
+                    <div class="flex-col flex-1 flex max-w-xs py-5">
+                        <h4 class="text-primary_clr-light text-xl sm:text-right">
+                            Sosiale Medier:
+                            
+                        </h4>
+                        <div class="flex gap-2 mt-1 sm:justify-end px-2">
+                            <img class="max-h-[30px]" src="/src/img/svg/facebook-social-media-svgrepo-com.svg" alt="FaceBook Logo">
+                            <img class="max-h-[30px]" src="/src/img/svg/instagram-2016-logo-svgrepo-com.svg" alt="Instagram Logo">
+                        </div>
+                    </div>
+                </div>
+        </footer>
+        
+        <script>
+            /* Script for pop-up */
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("myBtn");
+            var span = document.getElementsByClassName("close")[0];
+            btn.onclick = function () {
+                modal.style.display = "flex";
+            };
+            span.onclick = function () {
+                modal.style.display = "none";
+            };
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            };
+        </script>
     </body>
 </html>
