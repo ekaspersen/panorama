@@ -7,6 +7,8 @@
         <title>Panorama | Restaurant Sørenga</title>
         <link rel="icon" href="./img/svg/lobster-black-white.svg">
         <!-- JS IMPORTS -->
+        <script defer type="module" src="./js/script.js"></script>
+        <script defer src="./js/menu.js"></script>
         <!-- FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,14 +16,10 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
         />
-        <style>
-            .grid-style-yes {
-                grid-template-rows: repeat(8, minmax(0, 1fr));
-            }
-            @media screen and (min-width:640px) {
-                .grid-style-yes {
-                grid-template-rows: repeat(4, minmax(0, 1fr));
-            }
+        <style> 
+            .flex-style-menu {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             }
         </style>
     </head>
@@ -43,9 +41,11 @@
                 Meny
             </h1>
             <a href="#top" class="fixed z-50 bottom-2 right-2 rounded-full bg-primary_clr-primaryDark text-secondary-default flex items-center text-base p-2 pl-5">Til Toppen <span class="text-2xl px-[8.67px] pt-1">^</span></a>
-
-            <div class="flex flex-wrap text-secondary-default">
-                <details
+            <div class="h-[500px] grid place-items-center text-secondary-default">
+                <h2 class="text-clr text-2xl text-center max-w-lg">Menyen vår ferdigstilles enda, om du har hanvendelser til restauranten gjerne kontakt oss via tlf. eller e-post gitt nederst på siden.</h2>
+            </div>
+            <div class="hidden flex-wrap text-secondary-default">
+                <details id="forretter"
                     class="sm:w-md w-full gap-5 pl-[10px] border-l-4 border-secondary-default  mx-2 sm:mx-5 my-4 sm:my-5"
                 >
                     <summary
@@ -54,7 +54,7 @@
                         Forretter
                     </summary>
                     <div 
-                        class="grid mr-2 grid-style-yes grid-flow-col gap-4 max-w-full "
+                        class="mr-2 flex-style-menu gap-4 max-w-full"
                     >
                         <div class="p-[10px] pr-1 bg-primary_clr rounded-lg">
                             <div class="flex flex-col pl-5 gap-2">
@@ -235,7 +235,7 @@
                         Hovedretter
                     </summary>
                     <div 
-                        class="grid mr-2 grid-style-yes grid-flow-col gap-4 max-w-full "
+                        class="mr-2 flex-style-menu gap-4 max-w-full"
                     >
                         <div class="p-[10px] pr-1 bg-primary_clr rounded-lg">
                             <div class="flex flex-col pl-5 gap-2">
@@ -416,29 +416,9 @@
                         Dessert
                     </summary>
                     <div 
-                        class="grid mr-2 grid-style-yes grid-flow-col gap-4 max-w-full "
+                        class="mr-2 flex-style-menu gap-4 max-w-full"
                     >
-                        <div class="p-[10px] pr-1 bg-primary_clr rounded-lg">
-                            <div class="flex flex-col pl-5 gap-2">
-                                <h3
-                                    class="font-bold text-lg sm:text-xl relative left-[-20px]"
-                                >
-                                    1. Elg carpaccio
-                                </h3>
-                                <p
-                                    class="text-sm sm:text-base max-w-xs sm:max-w-md"
-                                >
-                                    Urter granateple ruccula Pepperrotkrem
-                                    pinjekjerne rødvin dressing
-                                </p>
-                                <p class="text-xs opacity-60">
-                                    (allergener, melk)
-                                </p>
-                                <p class="text-sm sm:text-base opacity-90">
-                                    179<span class="text-xs">kr</span>
-                                </p>
-                            </div>
-                        </div> 
+                        
                         <div class="p-[10px] pr-1 bg-primary_clr rounded-lg">
                             <div class="flex flex-col pl-5 gap-2">
                                 <h3
@@ -597,7 +577,7 @@
                         Barnemeny
                     </summary>
                     <div 
-                        class="grid mr-2 grid-style-yes grid-flow-col gap-4 max-w-full "
+                        class="mr-2 flex-style-menu gap-4 max-w-full"
                     >
                         <div class="p-[10px] pr-1 bg-primary_clr rounded-lg">
                             <div class="flex flex-col pl-5 gap-2">
@@ -778,50 +758,8 @@
                         Snacks
                     </summary>
                     <div 
-                        class="grid mr-2 grid-style-yes grid-flow-col gap-4 max-w-full "
+                        class="mr-2 flex-style-menu gap-4 max-w-full"
                     >
-                        <div class="p-[10px] pr-1 bg-primary_clr rounded-lg">
-                            <div class="flex flex-col pl-5 gap-2">
-                                <h3
-                                    class="font-bold text-lg sm:text-xl relative left-[-20px]"
-                                >
-                                    1. Elg carpaccio
-                                </h3>
-                                <p
-                                    class="text-sm sm:text-base max-w-xs sm:max-w-md"
-                                >
-                                    Urter granateple ruccula Pepperrotkrem
-                                    pinjekjerne rødvin dressing
-                                </p>
-                                <p class="text-xs opacity-60">
-                                    (allergener, melk)
-                                </p>
-                                <p class="text-sm sm:text-base opacity-90">
-                                    179<span class="text-xs">kr</span>
-                                </p>
-                            </div>
-                        </div> 
-                        <div class="p-[10px] pr-1 bg-primary_clr rounded-lg">
-                            <div class="flex flex-col pl-5 gap-2">
-                                <h3
-                                    class="font-bold text-lg sm:text-xl relative left-[-20px]"
-                                >
-                                    1. Elg carpaccio
-                                </h3>
-                                <p
-                                    class="text-sm sm:text-base max-w-xs sm:max-w-md"
-                                >
-                                    Urter granateple ruccula Pepperrotkrem
-                                    pinjekjerne rødvin dressing
-                                </p>
-                                <p class="text-xs opacity-60">
-                                    (allergener, melk)
-                                </p>
-                                <p class="text-sm sm:text-base opacity-90">
-                                    179<span class="text-xs">kr</span>
-                                </p>
-                            </div>
-                        </div> 
                         <div class="p-[10px] pr-1 bg-primary_clr rounded-lg">
                             <div class="flex flex-col pl-5 gap-2">
                                 <h3
@@ -999,6 +937,6 @@
                     </div>
                 </div>
         </footer>
-        <script type="module" src="./js/script.js"></script>
+        
     </body>
 </html>
