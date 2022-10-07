@@ -6,16 +6,7 @@
         <title>Panorama | Restaurant Sørenga</title>
         <link rel="icon" href="./img/svg/lobster-black-white.svg" />
         <!-- JS IMPORTS -->
-        <script type="text/javascript">
-            (function () {
-                var st = document.createElement("script");
-                st.type = "text/javascript";
-                st.async = true;
-                st.src = "//book.easytablebooking.com/book/widget/v3/book.js";
-                var sc = document.getElementsByTagName("script")[0];
-                sc.parentNode.insertBefore(st, sc);
-            })();
-        </script>
+        <script defer type="module" src="./js/script.js"></script>
         <!-- FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,8 +37,7 @@
                 right: 10px;
             }
 
-            .close:hover,
-            .close:focus {
+            .close:hover {
                 text-decoration: none;
                 cursor: pointer;
             }
@@ -200,7 +190,7 @@
             <div class="flex-col flex-1 flex max-w-xs py-5">
                 <h4 class="text-primary_clr-light text-xl">Kontakt Oss:</h4>
                 <p class="text-secondary-default text-lg opacity-50 pl-2">
-                    +47 90 26 44 22
+                    +47 413 26 663
                 </p>
                 <p
                     class="text-secondary-default text-lg opacity-50 pl-2 pt-[2px] mt-[-10px]"
@@ -240,7 +230,7 @@
         </footer>
 
         <script>
-            /* Script for pop-up */
+            /* Script for opening hours pop-up */
             var modal = document.getElementById("myModal");
             var btn = document.getElementById("myBtn");
             var span = document.getElementsByClassName("close")[0];
@@ -256,6 +246,5 @@
                 }
             };
         </script>
-        <script type="module" src="./js/script.js"></script>
     </body>
 </html>
