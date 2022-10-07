@@ -17,7 +17,7 @@ module.exports = {
         extend: {
             backgroundImage: {
                 "gradient-radial":
-                    "radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0) 100%)",
+                    "radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%)",
                 "fade-out-hero-gradient":
                     "linear-gradient(90deg, #040d14 33.33%, rgba(4, 16, 26, 0) 100%);",
                 "fade-out-hero-gradient-top":

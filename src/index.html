@@ -54,11 +54,11 @@
             id="navDropdown"
             class="absolute top-[-1000px] target:relative target:top-0 target:left-0 target:right-0 text-primary_clr-light z-50 max-w-screen-xl mx-auto"
         >
-            <a href="#" class="absolute top-2 right-10 sm:right-28 text-3xl"
+            <a href="#" class="absolute top-2 right-10 sm:right-28 text-2xl"
                 >X</a
             >
             <div
-                class="h-2/4 w-full flex flex-col sm:flex-row sm:justify-center justify-start py-8 items-center gap-5 text-l"
+                class="h-fit w-full flex flex-col justify-end sm:flex-row sm:justify-center pt-8 items-center gap-5 text-l"
             >
                 <a
                     href="https://book.easytablebooking.com/book/?id=8d940&lang=auto"
@@ -122,23 +122,12 @@
                 </a>
             </div>
             <div
-                class="bg-fade-out-hero-gradient-top absolute w-full h-10 sm:opacity-100 opacity-70"
+                class="bg-fade-out-hero-gradient-top absolute w-full h-12 sm:opacity-100 opacity-70"
             ></div>
         </header>
         <main
             class="bg-[url('../src/img/panorama-bar.jpg')] bg-[length:150%_auto] sm:bg-[length:110%_auto] relative bg-scroll bg-no-repeat bg-center mx-auto flex h-screen max-w-screen-xl flex-col"
         >
-            <a
-                href="#navDropdown"
-                class="absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-            >
-                <img
-                    src="./img/svg/naviger-box.svg"
-                    alt="navigation-hamburger"
-                    srcset=""
-                />
-            </a>
-
             <div
                 class="absolute h-full sm:w-28 w-10 bg-fade-out-hero-gradient sm:opacity-100 opacity-70"
             ></div>
@@ -146,10 +135,10 @@
                 class="absolute h-full sm:w-28 w-10 bg-fade-out-hero-gradient sm:opacity-100 opacity-70 rotate-180 right-0"
             ></div>
             <div
-                class="flex h-full w-full items-center justify-center sm:pb-10 md:pb-10 lg:pb-20"
+                class="flex flex-col h-full w-full items-center justify-center sm:pb-10 md:pb-10 lg:pb-20"
             >
                 <div
-                    class="bg-gradient-radial h-20 w-full sm:w-4/6 md:w-3/6 lg:3/5"
+                    class="bg-gradient-radial flex items-center h-32 w-full sm:w-4/6 md:w-3/6 lg:3/5"
                 >
                     <img
                         class="w-4/5 max-w-lg mx-auto bg-opacity-10"
@@ -157,6 +146,13 @@
                         alt="Panorama logo"
                     />
                 </div>
+                <a href="#navDropdown" class="w-fit mx-auto">
+                    <img
+                        src="./img/svg/naviger-box.svg"
+                        alt="navigation-hamburger"
+                        srcset=""
+                    />
+                </a>
             </div>
         </main>
         <footer
