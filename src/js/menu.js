@@ -1,4 +1,4 @@
-`<details
+const something = `<details
     class="sm:w-md w-full gap-5 pl-[10px] border-l-4 border-secondary-default  mx-2 sm:mx-5 my-4 sm:my-5"
 >
     <summary

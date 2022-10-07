@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="/dist/output.css" rel="stylesheet" />
         <title>Panorama | Restaurant Sørenga</title>
         <link rel="icon" href="./img/svg/lobster-black-white.svg">
         <!-- JS IMPORTS -->
@@ -13,7 +12,12 @@
             st.type='text/javascript'; st.async=true; 
             st.src='//book.easytablebooking.com/book/widget/v3/book.js'; 
             var sc=document.getElementsByTagName('script')[0]; 
-            sc.parentNode.insertBefore(st, sc); })();
+            sc.parentNode.insertBefore(st, sc); 
+           // const modalBg = document.getElementById("#BookingBackground")
+           // console.log(modalBg)
+           // const modalBgClassList = modalBg.classList
+           // modalBgClassList.add("flex-center")
+        })();
         </script>
         <!-- FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,12 +27,9 @@
             * {
                 font-family: 'Inter', sans-serif;
             }
-            /* The Modal (background) */
             .modal {
                 display: none;
             }
-
-            /* Modal Content */
             .modal-content {
                 position: relative;
                 color: #fff;
@@ -37,8 +38,6 @@
                 padding-top: 0;
                 width: fit-content;
             }
-
-            /* The Close Button */
             .close {
                 color: #fff;
                 font-size: 28px;
