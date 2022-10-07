@@ -21,6 +21,8 @@ module.exports = {
                     "radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0) 100%)",
                 "fade-out-hero-gradient":
                     "linear-gradient(90deg, #000 33.33%, rgba(0, 0, 0, 0) 100%);",
+                "fade-out-hero-gradient-top":
+                    "linear-gradient(180deg, #000 33.33%, rgba(0, 0, 0, 0) 100%);",
             },
         },
     },

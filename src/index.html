@@ -4,28 +4,28 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Panorama | Restaurant Sørenga</title>
-        <link rel="icon" href="./img/svg/lobster-black-white.svg">
+        <link rel="icon" href="./img/svg/lobster-black-white.svg" />
         <!-- JS IMPORTS -->
         <script type="text/javascript">
-        (function() { 
-            var st=document.createElement('script'); 
-            st.type='text/javascript'; st.async=true; 
-            st.src='//book.easytablebooking.com/book/widget/v3/book.js'; 
-            var sc=document.getElementsByTagName('script')[0]; 
-            sc.parentNode.insertBefore(st, sc); 
-           // const modalBg = document.getElementById("#BookingBackground")
-           // console.log(modalBg)
-           // const modalBgClassList = modalBg.classList
-           // modalBgClassList.add("flex-center")
-        })();
+            (function () {
+                var st = document.createElement("script");
+                st.type = "text/javascript";
+                st.async = true;
+                st.src = "//book.easytablebooking.com/book/widget/v3/book.js";
+                var sc = document.getElementsByTagName("script")[0];
+                sc.parentNode.insertBefore(st, sc);
+            })();
         </script>
         <!-- FONTS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
         <style>
             * {
-                font-family: 'Inter', sans-serif;
+                font-family: "Inter", sans-serif;
             }
             .modal {
                 display: none;
@@ -58,35 +58,19 @@
     </head>
     <body>
         <a name="top" class="absolute top-0"></a>
+
         <h1 class="hidden">Panorama | Restaurant Sørenga</h1>
-        <main
-            class="bg-[url('../src/img/panorama-bar.jpg')] bg-[length:150%_auto] sm:bg-[length:110%_auto] relative bg-scroll bg-no-repeat bg-center mx-auto flex h-screen max-w-screen-xl flex-col"
+        <header
+            id="navDropdown"
+            class="absolute top-[-1000px] target:relative target:top-0 target:left-0 target:right-0 text-primary_clr-light z-50 max-w-screen-xl mx-auto"
         >
+            <a href="#" class="absolute top-2 right-5 text-3xl">X</a>
             <div
-                class="absolute h-full sm:w-28 w-10 bg-fade-out-hero-gradient sm:opacity-100 opacity-70"
-            ></div>
-            <div
-                class="absolute h-full sm:w-28 w-10 bg-fade-out-hero-gradient sm:opacity-100 opacity-70 rotate-180 right-0"
-            ></div>
-            <div
-                class="flex h-2/4 w-full items-end justify-center sm:pb-10 md:pb-10 lg:pb-20"
-            >
-                <div
-                    class="bg-gradient-radial h-20 w-full sm:w-4/6 md:w-3/6 lg:3/5"
-                >
-                    <img
-                        class="w-4/5 max-w-lg mx-auto bg-opacity-10"
-                        src="./img/svg/logo/Panorama-logo.svg"
-                        alt="Panorama logo"
-                    />
-                </div>
-            </div>
-            <div
-                class="h-2/4 w-full flex flex-col justify-start md:pt-4 items-center gap-5 pt-10 lg:pb-0 text-l"
+                class="h-2/4 w-full flex flex-col sm:flex-row sm:justify-center justify-start py-8 items-center gap-5 text-l"
             >
                 <a
                     href="https://book.easytablebooking.com/book/?id=8d940&lang=auto"
-                    class="flex justify-center w-40 py-2 uppercase border  sm:hover:rounded-2xl transition-all"
+                    class="flex justify-center w-40 py-2 uppercase border sm:hover:rounded-2xl transition-all"
                     style="border-color: white; color: white"
                 >
                     booking
@@ -98,13 +82,22 @@
                 >
                     <button
                         id="myBtn"
-                        class="flex justify-center w-40 py-2  uppercase mx-auto"
+                        class="flex justify-center w-40 py-2 uppercase mx-auto"
                     >
                         Åpningstider
                     </button>
                     <div id="myModal" class="modal">
                         <!-- Modal content -->
-                        <div class="modal-content rounded-full shadow-inner" style="background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.15) 53.12%, rgba(0, 0, 0, 0) 100%);">
+                        <div
+                            class="modal-content rounded-full shadow-inner"
+                            style="
+                                background: radial-gradient(
+                                    50% 50% at 50% 50%,
+                                    rgba(0, 0, 0, 0.15) 53.12%,
+                                    rgba(0, 0, 0, 0) 100%
+                                );
+                            "
+                        >
                             <span class="close">&times;</span>
                             <div class="flex justify-center">
                                 <p class="font-semibold">Servering:</p>
@@ -113,7 +106,7 @@
                                 <div class="flex flex-col">
                                     <p class="text-right">Man - Søndag:</p>
                                 </div>
-                                
+
                                 <div class="flex flex-col">
                                     <p class="">11.00 - 22.00</p>
                                 </div>
@@ -124,7 +117,6 @@
                             <div class="flex justify-center">
                                 <p>Stenger ikke før 00.30</p>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
@@ -137,54 +129,114 @@
                     meny
                 </a>
             </div>
+        </header>
+        <main
+            class="bg-[url('../src/img/panorama-bar.jpg')] bg-[length:150%_auto] sm:bg-[length:110%_auto] relative bg-scroll bg-no-repeat bg-center mx-auto flex h-screen max-w-screen-xl flex-col"
+        >
+            <a
+                href="#navDropdown"
+                class="absolute top-24 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            >
+                <img
+                    src="./img/svg/nav-box.svg"
+                    alt="navigation-hamburger"
+                    srcset=""
+                    class="target:hidden"
+                />
+            </a>
+            <div
+                class="absolute w-full h-10 bg-fade-out-hero-gradient-top sm:opacity-100 opacity-70"
+            ></div>
+            <div
+                class="absolute h-full sm:w-28 w-10 bg-fade-out-hero-gradient sm:opacity-100 opacity-70"
+            ></div>
+            <div
+                class="absolute h-full sm:w-28 w-10 bg-fade-out-hero-gradient sm:opacity-100 opacity-70 rotate-180 right-0"
+            ></div>
+            <div
+                class="flex h-full w-full items-center justify-center sm:pb-10 md:pb-10 lg:pb-20"
+            >
+                <div
+                    class="bg-gradient-radial h-20 w-full sm:w-4/6 md:w-3/6 lg:3/5"
+                >
+                    <img
+                        class="w-4/5 max-w-lg mx-auto bg-opacity-10"
+                        src="./img/svg/logo/Panorama-logo.svg"
+                        alt="Panorama logo"
+                    />
+                </div>
+            </div>
         </main>
-            <footer class="flex flex-col sm:justify-center sm:flex-row flex-wrap  border-t mx-auto p-5 border-primary_clr-light max-w-screen-xl">
-                <div class="flex-col flex w-full sm:border-b sm:border-primary_clr-light">
-                    <h3 class="text-primary_clr-light text-2xl sm:text-4xl text-center">
-                        Panorama Restaurant
-                    </h3>
-                    <a  id="adress"
+        <footer
+            class="flex flex-col sm:justify-center sm:flex-row flex-wrap border-t mx-auto p-5 border-primary_clr-light max-w-screen-xl"
+        >
+            <div
+                class="flex-col flex w-full sm:border-b sm:border-primary_clr-light"
+            >
+                <h3
+                    class="text-primary_clr-light text-2xl sm:text-4xl text-center"
+                >
+                    Panorama Restaurant
+                </h3>
+                <a
+                    id="adress"
+                    target="_blank"
+                    href="https://www.google.com/maps/place/Panorama+Restaurant/@59.9017113,10.7201153,13z/data=!4m9!1m2!2m1!1spanorama+s%C3%B8renga!3m5!1s0x46416f591d689f67:0xf70091e7114a007d!8m2!3d59.9032902!4d10.7543291!15sChFwYW5vcmFtYSBzw7hyZW5nYZIBCnJlc3RhdXJhbnTgAQA"
+                    class="relative text-secondary-default text-lg opacity-70 mt-[-2px] width-fit mx-auto pb-5"
+                >
+                    Sørengkaia 69, 0194 Oslo
+                    <img
+                        class="absolute top-1 right-[-30px] h-5"
+                        src="./img/svg/pin.svg"
+                        alt="pinpoint"
+                    />
+                </a>
+            </div>
+            <div
+                class="w-full h-px sm:hidden bg-primary_clr-light mt-1 max-w"
+            ></div>
+            <div class="flex-col flex-1 flex max-w-xs py-5">
+                <h4 class="text-primary_clr-light text-xl">Kontakt Oss:</h4>
+                <p class="text-secondary-default text-lg opacity-50 pl-2">
+                    +47 90 26 44 22
+                </p>
+                <p
+                    class="text-secondary-default text-lg opacity-50 pl-2 pt-[2px] mt-[-10px]"
+                >
+                    post@panoramarestaurant.no
+                </p>
+            </div>
+            <div class="w-full h-px sm:hidden bg-primary_clr-light mt-1"></div>
+            <div class="flex-col flex-1 flex max-w-xs py-5">
+                <h4 class="text-primary_clr-light text-xl sm:text-right">
+                    Sosiale Medier:
+                </h4>
+                <div class="flex gap-2 mt-1 sm:justify-end px-2">
+                    <a
+                        href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fpanoramasorenga%3Figshid%3DYmMyMTA2M2Y%253D%26fbclid%3DIwAR0o1Rjx1uZclldwzDseYobXAqNW0rxPSupUMsURCz0j19KanN5VqiILuic&h=AT2z_SFL9iOIncHFT9vur45kCms1wJ3DMiO6YQw6q3qYMn3mqqrS_fXV6aJcDpSPtT9OVjqnUYQKCtklhwIA-lgcdcScmIQsdqIhza8SEibs7qETMLdxv-XpIdPk4I20c7JxaQ"
                         target="_blank"
-                        href="https://www.google.com/maps/place/Panorama+Restaurant/@59.9017113,10.7201153,13z/data=!4m9!1m2!2m1!1spanorama+s%C3%B8renga!3m5!1s0x46416f591d689f67:0xf70091e7114a007d!8m2!3d59.9032902!4d10.7543291!15sChFwYW5vcmFtYSBzw7hyZW5nYZIBCnJlc3RhdXJhbnTgAQA"
-                        class="
-                        relative text-secondary-default text-lg opacity-70 mt-[-2px] width-fit mx-auto pb-5"
-                        >
-                        Sørengkaia 69, 0194 Oslo
-                        <img class="absolute top-1 right-[-30px] h-5" src="./img/svg/pin.svg" alt="pinpoint">
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            class="max-h-[30px]"
+                            src="./img/svg/instagram-2016-logo-svgrepo-com.svg"
+                            alt="Instagram Logo"
+                        />
+                    </a>
+                    <a
+                        href="https://www.facebook.com/panoramarestaurantoslo"
+                        target="_blank"
+                    >
+                        <img
+                            class="max-h-[30px]"
+                            src="./img/svg/facebook-social-media-svgrepo-com.png"
+                            alt="FaceBook Logo"
+                        />
                     </a>
                 </div>
-                <div class="w-full h-px sm:hidden bg-primary_clr-light mt-1 max-w"></div>
-                <div class="flex-col flex-1 flex max-w-xs py-5">
-                    <h4 class="text-primary_clr-light text-xl">Kontakt Oss:</h4>
-                    <p class="text-secondary-default text-lg opacity-50 pl-2">
-                        +47 90 26 44 22
-                    </p>
-                    <p
-                        class="text-secondary-default text-lg opacity-50 pl-2 pt-[2px] mt-[-10px]"
-                    >
-                        post@panoramarestaurant.no
-                    </p>
-                </div>
-                    <div class="w-full h-px sm:hidden bg-primary_clr-light mt-1"></div>
-                    <div class="flex-col flex-1 flex max-w-xs py-5">
-                        <h4 class="text-primary_clr-light text-xl sm:text-right">
-                            Sosiale Medier:
-                            
-                        </h4>
-                        <div class="flex gap-2 mt-1 sm:justify-end px-2">
-                            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fpanoramasorenga%3Figshid%3DYmMyMTA2M2Y%253D%26fbclid%3DIwAR0o1Rjx1uZclldwzDseYobXAqNW0rxPSupUMsURCz0j19KanN5VqiILuic&h=AT2z_SFL9iOIncHFT9vur45kCms1wJ3DMiO6YQw6q3qYMn3mqqrS_fXV6aJcDpSPtT9OVjqnUYQKCtklhwIA-lgcdcScmIQsdqIhza8SEibs7qETMLdxv-XpIdPk4I20c7JxaQ" target="_blank" rel="noopener noreferrer">
-                            <img class="max-h-[30px]" src="./img/svg/instagram-2016-logo-svgrepo-com.svg" alt="Instagram Logo">
-                        </a>
-                            <a href="https://www.facebook.com/panoramarestaurantoslo" target="_blank">
-                                <img class="max-h-[30px]" src="./img/svg/facebook-social-media-svgrepo-com.png" alt="FaceBook Logo">
-                            </a>
-                            
-                            
-                        </div>
-                    </div>
-                </div>
+            </div>
         </footer>
-        
+
         <script>
             /* Script for pop-up */
             var modal = document.getElementById("myModal");
