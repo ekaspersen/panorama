@@ -16,23 +16,128 @@
             rel="stylesheet"
         />
         <style> 
+        * {
+                font-family: "Inter", sans-serif;
+            }
+            .modal {
+                display: none;
+            }
             .flex-style-menu {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             }
+            
+            .modal-content {
+                position: relative;
+                color: #fff;
+                margin: auto;
+                padding: 20px;
+                padding-top: 0;
+                width: fit-content;
+            }
+
+            .close:hover,
+            .close:focus {
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .close::selection {
+                background-color: transparent;
+            }
         </style>
     </head>
     <body>
+        <header
+            id="navDropdown"
+            class="absolute top-[-1000px] target:relative target:top-0 target:left-0 target:right-0 text-primary_clr-light z-50 max-w-screen-xl mx-auto"
+        >
+            <a href="#" class="absolute top-2 right-10 sm:right-28 text-3xl"
+                >X</a
+            >
+            <div
+                class="h-2/4 w-full flex flex-col sm:flex-row sm:justify-center justify-start py-8 items-center gap-5 text-l"
+            >
+                <a
+                    href="https://book.easytablebooking.com/book/?id=8d940&lang=auto"
+                    class="flex justify-center w-40 py-2 uppercase border sm:hover:rounded-2xl transition-all"
+                    style="border-color: white; color: white"
+                >
+                    booking
+                </a>
+                <div
+                    id="opening-hours"
+                    class="max-w-fit border sm:hover:rounded-2xl transition-all"
+                    style="border-color: white; color: white"
+                >
+                    <button
+                        id="myBtn"
+                        class="flex justify-center w-40 py-2 uppercase mx-auto"
+                    >
+                        Åpningstider
+                    </button>
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div
+                            class="modal-content rounded-full shadow-inner"
+                            style="
+                                background: radial-gradient(
+                                    50% 50% at 50% 50%,
+                                    rgba(0, 0, 0, 0.15) 53.12%,
+                                    rgba(0, 0, 0, 0) 100%
+                                );
+                            "
+                        >
+                            <div class="flex justify-center">
+                                <p class="font-semibold">Servering:</p>
+                            </div>
+                            <div class="flex justify-center gap-2">
+                                <div class="flex flex-col">
+                                    <p class="text-right">Man - Søndag:</p>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <p class="">11.00 - 21.30</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-center pt-2">
+                                <p class="font-bold">Bar & Lounge:</p>
+                            </div>
+                            <div class="flex justify-center">
+                                <p>Stenger ikke før 00.30</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a
+                    href="./menu.html"
+                    class="flex justify-center w-40 py-2 uppercase border sm:hover:rounded-2xl transition-all"
+                    style="border-color: white; color: white"
+                >
+                    meny
+                </a>
+            </div>
+        </header>
         <main
             class="relative bg-scroll bg-no-repeat bg-center mx-auto flex max-w-screen-lg flex-col bg-primary_clr-primaryDark"
         >
-            <a href="./" class="flex flex-col items-center gap-5 py-16 bg-primary_clr-primaryDark border-b-2 border-secondary-default relative">
+            <a href="./" class="flex flex-col items-center gap-5 pt-28 pb-24 bg-primary_clr-primaryDark border-b-2 border-primary_clr-light relative">
                 <img
                     class="max-w-md"
-                    src="./img/svg/logo/panorama-logo-beige.svg"
+                    src="./img/svg/logo/panorama-logo.svg"
                     alt="logo panorama"
                 />
-                <img src="./img/svg/home-icon.svg" alt="home-icon" class="absolute right-2 lg:right-0 top-2 text-secondary-default">
+                 <a
+                href="#navDropdown"
+                class="absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            >
+                <img
+                    src="./img/svg/naviger-box.svg"
+                    alt="navigation-hamburger"
+                    srcset=""
+                    class="target:hidden"
+                />
+            </a>
             </a>
             <h1
                 class="mx-auto my-10 font-light text-4xl sm:text-5xl text-secondary-default text-center"
@@ -647,6 +752,22 @@
                     </div>
                 </div>
         </footer>
-        
+         <script>
+            /* Script for pop-up */
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("myBtn");
+            var span = document.getElementsByClassName("close")[0];
+            btn.onclick = function () {
+                modal.style.display = "flex";
+            };
+            span.onclick = function () {
+                modal.style.display = "none";
+            };
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            };
+        </script>
     </body>
 </html>

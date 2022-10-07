@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="bg-primary_clr-dark scroll-smooth">
+<html class="bg-primary_clr-primaryDark scroll-smooth">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -64,7 +64,9 @@
             id="navDropdown"
             class="absolute top-[-1000px] target:relative target:top-0 target:left-0 target:right-0 text-primary_clr-light z-50 max-w-screen-xl mx-auto"
         >
-            <a href="#" class="absolute top-2 right-5 text-3xl">X</a>
+            <a href="#" class="absolute top-2 right-10 sm:right-28 text-3xl"
+                >X</a
+            >
             <div
                 class="h-2/4 w-full flex flex-col sm:flex-row sm:justify-center justify-start py-8 items-center gap-5 text-l"
             >
@@ -129,24 +131,24 @@
                     meny
                 </a>
             </div>
+            <div
+                class="bg-fade-out-hero-gradient-top absolute w-full h-10 sm:opacity-100 opacity-70"
+            ></div>
         </header>
         <main
             class="bg-[url('../src/img/panorama-bar.jpg')] bg-[length:150%_auto] sm:bg-[length:110%_auto] relative bg-scroll bg-no-repeat bg-center mx-auto flex h-screen max-w-screen-xl flex-col"
         >
             <a
                 href="#navDropdown"
-                class="absolute top-24 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                class="absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             >
                 <img
                     src="./img/svg/naviger-box.svg"
                     alt="navigation-hamburger"
                     srcset=""
-                    class="target:hidden"
                 />
             </a>
-            <div
-                class="absolute w-full h-10 bg-fade-out-hero-gradient-top sm:opacity-100 opacity-70"
-            ></div>
+
             <div
                 class="absolute h-full sm:w-28 w-10 bg-fade-out-hero-gradient sm:opacity-100 opacity-70"
             ></div>

@@ -6,8 +6,7 @@ module.exports = {
         colors: {
             primary_clr: {
                 DEFAULT: "#081F31",
-                primaryDark: "#04101A",
-                menuBg: "#0F3A5C",
+                primaryDark: "#040d14",
                 dark: "#000",
                 light: "#fff",
             },
@@ -20,9 +19,9 @@ module.exports = {
                 "gradient-radial":
                     "radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0) 100%)",
                 "fade-out-hero-gradient":
-                    "linear-gradient(90deg, #000 33.33%, rgba(0, 0, 0, 0) 100%);",
+                    "linear-gradient(90deg, #040d14 33.33%, rgba(4, 16, 26, 0) 100%);",
                 "fade-out-hero-gradient-top":
-                    "linear-gradient(180deg, #000 33.33%, rgba(0, 0, 0, 0) 100%);",
+                    "linear-gradient(180deg, #040d14 33.33%, rgba(4, 16, 26, 0) 100%);",
             },
         },
     },
