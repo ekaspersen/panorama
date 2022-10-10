@@ -36,108 +36,131 @@
                 width: fit-content;
             }
 
-            .close:hover,
-            .close:focus {
+            .close {
+                color: #fff;
+                font-size: 28px;
+                position: absolute;
+                top: -44px;
+                right: 10px;
+            }
+            .close:hover {
                 text-decoration: none;
                 cursor: pointer;
             }
             .close::selection {
                 background-color: transparent;
             }
+            .toggle-nav {
+                top: -2000px;
+                position: absolute;
+            }
         </style>
     </head>
     <body>
-        <header
-            id="navDropdown"
-            class="absolute top-[-1000px] target:relative target:top-0 target:left-0 target:right-0 text-primary_clr-light z-50 max-w-screen-xl mx-auto"
-        >
-            <a href="#" class="absolute top-2 right-10 sm:right-28 text-3xl"
-                >X</a
-            >
-            <div
-                class="h-2/4 w-full flex flex-col sm:flex-row sm:justify-center justify-start py-8 items-center gap-5 text-l"
-            >
-                <a
-                    href="https://book.easytablebooking.com/book/?id=8d940&lang=auto"
-                    class="flex justify-center w-40 py-2 uppercase border sm:hover:rounded-2xl transition-all"
-                    style="border-color: white; color: white"
+        <div
+                    class="bg-gradient-radial mx-auto flex items-center flex-col gap-5 my-10 justify-center h-32 w-full sm:w-4/6 md:w-3/6 lg:3/5"
                 >
-                    booking
-                </a>
-                <div
-                    id="opening-hours"
-                    class="max-w-fit border sm:hover:rounded-2xl transition-all"
-                    style="border-color: white; color: white"
+                    <img
+                        class="w-4/5 max-w-md bg-opacity-10"
+                        src="./img/svg/logo/Panorama-logo.svg"
+                        alt="Panorama logo"
+                    /> 
+                    <button onclick="navDropdown()" class="w-fit mx-auto">
+                    <img
+                        src="./img/svg/naviger-box.svg"
+                        alt="navigation-hamburger"
+                        srcset=""
+                    />
+                </button>
+                </div>
+               
+                <nav
+                    id="navMenu"
+                    class="toggle-nav w-full align-top text-primary_clr-light z-50 mx-auto"
                 >
-                    <button
-                        id="myBtn"
-                        class="flex justify-center w-40 py-2 uppercase mx-auto"
+                    <div
+                        class="h-fit w-full flex flex-col justify-end md:flex-row sm:justify-center pb-8 items-center gap-5 text-l"
                     >
-                        Åpningstider
-                    </button>
-                    <div id="myModal" class="modal">
-                        <!-- Modal content -->
-                        <div
-                            class="modal-content rounded-full shadow-inner"
-                            style="
-                                background: radial-gradient(
-                                    50% 50% at 50% 50%,
-                                    rgba(0, 0, 0, 0.15) 53.12%,
-                                    rgba(0, 0, 0, 0) 100%
-                                );
-                            "
+                        <a
+                            href="https://book.easytablebooking.com/book/?id=8d940&lang=auto"
+                            class="flex justify-center w-40 py-2 uppercase border sm:hover:rounded-2xl transition-all"
+                            style="border-color: white; color: white"
                         >
-                            <div class="flex justify-center">
-                                <p class="font-semibold">Servering:</p>
-                            </div>
-                            <div class="flex justify-center gap-2">
-                                <div class="flex flex-col">
-                                    <p class="text-right">Man - Søndag:</p>
-                                </div>
+                            booking
+                        </a>
+                        <div
+                            id="opening-hours"
+                            class="md:max-w-fit border sm:hover:rounded-2xl transition-all"
+                            style="border-color: white; color: white"
+                        >
+                            <button
+                                id="myBtn"
+                                class="flex justify-center w-40 py-2 uppercase mx-auto"
+                            >
+                                Åpningstider
+                            </button>
+                            <div
+                                id="myModal"
+                                class="modal"
+                                style="display: none"
+                            >
+                                <!-- Modal content -->
+                                <div
+                                    class="modal-content rounded-full shadow-inner"
+                                    style="
+                                        background: radial-gradient(
+                                            50% 50% at 50% 50%,
+                                            rgba(0, 0, 0, 0.15) 53.12%,
+                                            rgba(0, 0, 0, 0) 100%
+                                        );
+                                    "
+                                >
+                                    <span class="close">×</span>
+                                    <div class="flex justify-center">
+                                        <p class="font-semibold">Servering:</p>
+                                    </div>
+                                    <div class="flex justify-center gap-2">
+                                        <div class="flex flex-col">
+                                            <p class="text-right">
+                                                Man - Søndag:
+                                            </p>
+                                        </div>
 
-                                <div class="flex flex-col">
-                                    <p class="">11.00 - 21.30</p>
+                                        <div class="flex flex-col">
+                                            <p class="">11.00 - 21.30</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-center pt-2">
+                                        <p class="font-bold">
+                                            Bar &amp; Lounge:
+                                        </p>
+                                    </div>
+                                    <div class="flex justify-center">
+                                        <p>Åpent fra 11.00 - 00.30</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="flex justify-center pt-2">
-                                <p class="font-bold">Bar & Lounge:</p>
-                            </div>
-                            <div class="flex justify-center">
-                                <p>Stenger ikke før 00.30</p>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <a
-                    href="./menu.html"
-                    class="flex justify-center w-40 py-2 uppercase border sm:hover:rounded-2xl transition-all"
-                    style="border-color: white; color: white"
-                >
-                    meny
-                </a>
-            </div>
-        </header>
+                        <a
+                            href="./"
+                            class="flex justify-center w-40 py-2 uppercase border sm:hover:rounded-2xl transition-all"
+                            style="border-color: white; color: white"
+                        >
+                            hJEM
+                        </a>
+                        <a
+                            href="#omOss"
+                            class="hidden justify-center w-40 py-2 uppercase border sm:hover:rounded-2xl transition-all"
+                            style="border-color: white; color: white"
+                        >
+                            om oss
+                        </a>
+                    </div>
+                </nav>
         <main
             class="relative bg-scroll bg-no-repeat bg-center mx-auto flex max-w-screen-lg flex-col bg-primary_clr-primaryDark"
         >
-            <a href="./" class="flex flex-col items-center gap-5 pt-28 pb-24 bg-primary_clr-primaryDark border-b-2 border-primary_clr-light relative">
-                <img
-                    class="max-w-md"
-                    src="./img/svg/logo/Panorama-logo.svg"
-                    alt="logo panorama"
-                />
-                 <a
-                href="#navDropdown"
-                class="absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-5"
-            >
-                <img
-                    src="./img/svg/naviger-box.svg"
-                    alt="navigation-hamburger"
-                    srcset=""
-                />
-            </a>
-            </a>
             <h1
                 class="mx-auto my-10 font-light text-4xl sm:text-5xl text-secondary-default text-center"
             >
@@ -750,6 +773,13 @@
                     </div>
                 </div>
         </footer>
+        <script>
+            function navDropdown() {
+                var navElement = document.getElementById("navMenu");
+                navElement.classList.toggle("toggle-nav");
+                navElement.classList.toggle("relative");
+            }
+        </script>
          <script>
             /* Script for opening hours pop-up */
             var modal = document.getElementById("myModal");
