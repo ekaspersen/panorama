@@ -67,13 +67,16 @@
         <h1 class="hidden">Panorama | Restaurant Sørenga</h1>
 
         <main
-            class="bg-[url('../src/img/panorama-bar.jpg')] bg-[length:150%_auto] sm:bg-[length:110%_auto] relative bg-scroll bg-no-repeat bg-center mx-auto flex h-screen max-w-screen-xl flex-col"
+            class="bg-[url('../src/img/panorama-bar.jpg')] bg-[length:150%_auto] sm:bg-[length:105%_auto] relative bg-scroll bg-no-repeat bg-center mx-auto flex h-screen max-w-screen-xl flex-col"
         >
             <div
                 class="absolute h-full sm:w-28 w-10 bg-fade-out-hero-gradient sm:opacity-100 opacity-70"
             ></div>
             <div
                 class="absolute h-full sm:w-28 w-10 bg-fade-out-hero-gradient sm:opacity-100 opacity-70 rotate-180 right-0"
+            ></div>
+            <div
+                class="absolute h-10 w-full bg-fade-out-hero-gradient-top sm:opacity-100 rotate-180 bottom-0"
             ></div>
             <div
                 class="flex flex-col h-full w-full items-center justify-center sm:pb-10 md:pb-10 lg:pb-20"
@@ -102,7 +105,7 @@
                         class="h-fit w-full flex flex-col justify-end md:flex-row sm:justify-center pt-8 items-center gap-5 text-l"
                     >
                         <a
-                            href="https://book.easytablebooking.com/book/?id=8d940&lang=auto"
+                            href="https://book.easytablebooking.com/book/?id=8d940&lang=auto" target="_blank"
                             class="flex justify-center w-40 py-2 uppercase border sm:hover:rounded-2xl transition-all"
                             style="border-color: white; color: white"
                         >
@@ -171,7 +174,7 @@
                         </a>
                         <a
                             href="#omOss"
-                            class="hidden justify-center w-40 py-2 uppercase border sm:hover:rounded-2xl transition-all"
+                            class="flex justify-center w-40 py-2 uppercase border sm:hover:rounded-2xl transition-all"
                             style="border-color: white; color: white"
                         >
                             om oss
@@ -180,6 +183,50 @@
                 </nav>
             </div>
         </main>
+        <section
+            class="relative bg-[length:auto_105%] bg-scroll bg-no-repeat bg-center xl:bg-[right_center] mx-auto flex h-screen max-w-screen-xl flex-col bg-[url('../src/img/panorama-outside.jpg')]"
+        >
+            <div
+                class="absolute h-full w-10 bg-fade-out-hero-gradient sm:opacity-100 opacity-70 hidden xl:block"
+            ></div>
+            <div
+                class="absolute h-full w-10 bg-fade-out-hero-gradient sm:opacity-100 opacity-70 rotate-180 right-0 hidden xl:block"
+            ></div>
+            <div
+                id="omOss"
+                class="absolute h-10 w-full bg-fade-out-hero-gradient-top sm:opacity-100"
+            ></div>
+            <div
+                class="w-fit mx-auto sm:mr-0 p-5 sm:p-10 sm:pr-20 my-auto place-items-center z-50 bg-primary_clr-dark bg-opacity-70 text-primary_clr-light"
+            >
+                <div class="flex flex-col max-w-[326px] gap-4">
+                    <h2 class="text text-[42px]">Mer om oss...</h2>
+                    <p class="">
+                        Panorama restaurant er lokalisert perfekt på Sørenga,
+                        med utsikt fra Barcode til Langkaia og ut i Oslo
+                        fjorden. Vi serverer hovedsakelig mediterranean grill og
+                        -sjømat.
+                    </p>
+                    <p>
+                        Vi har ett eksotisk preg på restauranten som gir deg en
+                        luksuriøs ferie følelse med palmer, flammer og hav
+                        utsikt!
+                    </p>
+                    <p>
+                        Vi har en luksuriøs innredning og god varm atmosfære.
+                        Her kan du sette deg tilbake å nyte god mat og utsikt
+                        til en hver anledning!
+                    </p>
+                    <a
+                        href="https://book.easytablebooking.com/book/?id=8d940&lang=auto" target="_blank"
+                        class="flex justify-center w-40 py-2 mt-4 uppercase border sm:hover:rounded-2xl transition-all"
+                        style="border-color: white; color: white"
+                    >
+                        Book bord nå
+                    </a>
+                </div>
+            </div>
+        </section>
         <footer
             class="flex flex-col sm:justify-center sm:flex-row flex-wrap border-t mx-auto p-5 border-primary_clr-light max-w-screen-xl"
         >
