@@ -38,8 +38,9 @@
                 position: relative;
                 color: #fff;
                 margin: auto;
-                padding: 20px;
-                padding-top: 0;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
                 width: fit-content;
             }
             .close {
@@ -94,7 +95,6 @@
                     <img
                         src="./img/svg/naviger-box.svg"
                         alt="navigation-hamburger"
-                        srcset=""
                     />
                 </button>
                 <nav
@@ -102,15 +102,21 @@
                     class="toggle-nav relative w-full align-top text-primary_clr-light z-50 mx-auto"
                 >
                     <div
-                        class="h-fit w-full flex flex-col justify-end md:flex-row sm:justify-center pt-8 items-center gap-5 text-l"
+                        class="w-full max-w-sm flex-wrap mx-auto flex flex-col justify-end md:flex-row sm:justify-center pt-8 items-center gap-5 text-l"
                     >
                         <a
-                            href="https://book.easytablebooking.com/book/?id=8d940&lang=auto"
-                            target="_blank"
+                            href="./menu.html"
                             class="flex justify-center w-40 py-2 uppercase border sm:hover:rounded-2xl transition-all"
                             style="border-color: white; color: white"
                         >
-                            booking
+                            meny
+                        </a>
+                        <a
+                            href="#omOss"
+                            class="flex justify-center w-40 py-2 uppercase border sm:hover:rounded-2xl transition-all"
+                            style="border-color: white; color: white"
+                        >
+                            om oss
                         </a>
                         <div
                             id="opening-hours"
@@ -167,18 +173,12 @@
                         </div>
 
                         <a
-                            href="./menu.html"
+                            href="https://book.easytablebooking.com/book/?id=8d940&lang=auto"
+                            target="_blank"
                             class="flex justify-center w-40 py-2 uppercase border sm:hover:rounded-2xl transition-all"
                             style="border-color: white; color: white"
                         >
-                            meny
-                        </a>
-                        <a
-                            href="#omOss"
-                            class="flex justify-center w-40 py-2 uppercase border sm:hover:rounded-2xl transition-all"
-                            style="border-color: white; color: white"
-                        >
-                            om oss
+                            booking
                         </a>
                     </div>
                 </nav>
