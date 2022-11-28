@@ -1,3 +1,89 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.inner {
+    max-width: 1156px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-style-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+.modal-content {
+    color: #fff;
+    padding-top: 0;
+    width: fit-content;
+    background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(0, 0, 0, 0.15) 53.12%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+.close {
+    color: #fff;
+    font-size: 28px;
+    position: absolute;
+    top: -44px;
+    right: 10px;
+}
+.close:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+.close::selection {
+    background-color: transparent;
+}
+.hero-banner-img-shadow {
+    top: 0;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.3) 67.71%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+.bg-hero-banner {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./img/panorama-restaurant-outside.jpg);
+    animation: slide 40s infinite ease-out;
+}
+@keyframes slide {
+    23% {
+        background-size: cover;
+        background-image: url(./img/panorama-restaurant-outside.jpg);
+    }
+    25% {
+        background-size: cover;
+        background-image: url(./img/image00091.jpg);
+    }
+    48% {
+        background-size: cover;
+        background-image: url(./img/image00091.jpg);
+    }
+    50% {
+        background-size: cover;
+        background-image: url(./img/image00149.jpeg);
+    }
+    73% {
+        background-size: cover;
+        background-image: url(./img/image00149.jpeg);
+    }
+    75% {
+        background-size: cover;
+        background-image: url(./img/panorama-stoler-ute.jpg);
+    }
+    98% {
+        background-size: cover;
+        background-image: url(./img/panorama-stoler-ute.jpg);
+    }
+    100% {
+        background-size: cover;
+        background-image: url(./img/panorama-restaurant-outside.jpg);
+    }
+}
