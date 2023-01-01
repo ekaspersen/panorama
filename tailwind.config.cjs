@@ -2,7 +2,6 @@
 module.exports = {
     content: ["./src/**/*.{html,js}"],
     theme: {
-        /*Colors | extend ->BackgroundImage*/
         colors: {
             primary_clr: {
                 DEFAULT: "#081F31",
@@ -14,7 +13,11 @@ module.exports = {
                 default: "#D4D0BA",
             },
         },
+
         extend: {
+            screens: {
+                lg: "960px",
+            },
             backgroundImage: {
                 "gradient-radial":
                     "radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%)",

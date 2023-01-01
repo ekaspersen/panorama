@@ -36,6 +36,10 @@
 .close::selection {
     background-color: transparent;
 }
+.hero-banner {
+    position: relative;
+    height: 60vh;
+}
 .hero-banner-img-shadow {
     top: 0;
     height: 100%;
@@ -51,7 +55,7 @@
     background-position: center;
     background-size: cover;
     background-image: url(./img/panorama-restaurant-outside.jpg);
-    animation: slide 40s infinite ease-out;
+    animation: slide 28s infinite ease-out;
 }
 @keyframes slide {
     23% {
@@ -68,11 +72,11 @@
     }
     50% {
         background-size: cover;
-        background-image: url(./img/image00149.jpeg);
+        background-image: url(./img/image00149.jpg);
     }
     73% {
         background-size: cover;
-        background-image: url(./img/image00149.jpeg);
+        background-image: url(./img/image00149.jpg);
     }
     75% {
         background-size: cover;
