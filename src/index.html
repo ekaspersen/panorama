@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html class="bg-primary_clr-dark scroll-smooth">
+
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4GQ4B9PLME"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-4GQ4B9PLME');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-4GQ4B9PLME');
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,6 +27,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <!-- JavaScript IMPORTS -->
     <script defer type="module" src="./js/script.js"></script>
+    <script defer src="./js/infoModal.js"></script>
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,56 +35,91 @@
         rel="stylesheet" />
     <!-- Meta Pixel Code -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1555819361511307');
-    fbq('track', 'PageView');
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1555819361511307');
+        fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1555819361511307&ev=PageView&noscript=1"
-    /></noscript>
+            src="https://www.facebook.com/tr?id=1555819361511307&ev=PageView&noscript=1" /></noscript>
 </head>
 
 <body>
     <header class="inner h-[10vh] sm:h-28 flex justify-center items-center relative">
         <h1 class="hidden ">Panorama Restaurant, Sørenga</h1>
         <img class="h-2/4" src="./img/svg/logo/Panorama-logo.svg" alt="panorama sørenga logo" />
-        
+
     </header>
+
     <main class="inner">
 
         <section id="heroBanner" class="relative h-[60vh] sm:h-[77vh] w-full  max-w-5xl mx-auto hero-banner">
             <div class="h-[60vh] sm:h-[77vh] w-full bg-hero-banner"></div>
             <div class="hero-banner-img-shadow w-10 sm:w-16 absolute z-30"></div>
             <div class="hero-banner-img-shadow w-10 sm:w-16 absolute rotate-180 right-0 z-30"></div>
+
+            <div class="absolute inner z-50 bottom-0">
+                <div
+                    class="   bg-primary_clr-dark bg-opacity-40 flex flex-col p-4 sm:rounded-2xl">
+                    <p class="font-medium text-xs text-primary_clr-light">Fra 1. April til 31. Mai</p>
+                    <h2 class="font-semibold text-primary_clr-light">2t Gratis parkering når du spiser hos oss</h2>
+                    <button id="animate-button" class="w-fit font-medium text-primary_clr-light">Mer informasjon <span
+                            style="letter-spacing: -0.15em;">>>></span></button>
+                    </div>
+                
+
+            </div>
+            <button  class="bg-clr text-white px-4 py-2 rounded">Click me!</button>
+
+            <div id="overlay" class="hidden fixed inset-0 bg-primary_clr-primaryDark bg-opacity-50 z-50"></div>
+
+            <div id="message-box"
+                class="hidden fixed max-w-[420px] w-full mx-4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-lg rounded-lg p-8 z-50">
+                <button id="close-button"
+                    class="absolute top-10 right-10 text-xl font-bold text-primary_clr-light focus:outline-none">&#10005;</button>
+                <div 
+                    class=" bg-primary_clr-dark bg-opacity-40 flex flex-col gap-4 p-8 sm:rounded-2xl">
+                    <p class="text-primary_clr-light font-semibold text-xl">Gratis parkering når du spiser hos oss</p>
+                    <p class="text-primary_clr-light">Panorama Restaurant & -bar spanderer 2 timer gratis parkering i
+                        tidsrommet <br> 16.00 - 24.00 i april og mai.</p> 
+                    <p class="text-primary_clr-light"><span class="font-semibold">Tilbudet gjelder</span> til de som parkerer på Sørenga p-hus og spiser på
+                        vår restaurant</p>
+                    <p class="text-primary_clr-light"><span class="font-semibold">For å få gratis parkering</span> registrerer du deg bare med nettbrett på
+                        vår restaurant ved ankomst.</p>
+                </div>
+            </div>
         </section>
 
         <nav id="navigation" class="w-full text-primary_clr-light mx-auto z-50">
-            <div class="w-full sm:flex-wrap sm:mx-auto my-8 flex flex-col sm:flex-row justify-center items-center gap-4 text-l">
+            <div
+                class="w-full sm:flex-wrap sm:mx-auto my-8 flex flex-col sm:flex-row justify-center items-center gap-4 text-l">
                 <a href="#meny"
-                    class="flex justify-center w-fit py-2 px-8 uppercase border sm:hover:rounded-2xl transition-all"
+                    class="flex justify-center py-2 w-36 uppercase border sm:hover:rounded-2xl transition-all"
                     style="border-color: white; color: white">
                     meny
                 </a>
 
                 <a href="https://book.easytablebooking.com/book/?id=8d940&lang=auto" target="_blank"
-                    class="flex justify-center w-fit py-2 px-8 uppercase border sm:hover:rounded-2xl transition-all"
+                    class="flex justify-center py-2 w-36 uppercase border sm:hover:rounded-2xl transition-all"
                     style="border-color: white; color: white">
                     booking
                 </a>
                 <a href="#omOss"
-                    class="flex justify-center w-fit py-2 px-8 uppercase border sm:hover:rounded-2xl transition-all"
+                    class="flex justify-center py-2 w-36 uppercase border sm:hover:rounded-2xl transition-all"
                     style="border-color: white; color: white">
                     om oss
                 </a>
                 <a href="#kontakt"
-                    class="flex justify-center w-fit py-2 px-8 uppercase border sm:hover:rounded-2xl transition-all"
+                    class="flex justify-center py-2 w-36 uppercase border sm:hover:rounded-2xl transition-all"
                     style="border-color: white; color: white">
                     kontakt
                 </a>
@@ -96,15 +133,18 @@
                 <div class="flex flex-col max-w-[326px] gap-4">
                     <h2 class="text text-[42px]">Mer om oss ...</h2>
                     <p class="">
-                        Panorama restaurant ligger perfekt til på Sørenga, med utsikt til både Barcode, Langkaia og Oslofjorden. Vi serverer grill- og sjømat med smaker fra Middelhavet. 
+                        Panorama restaurant ligger perfekt til på Sørenga, med utsikt til både Barcode, Langkaia og
+                        Oslofjorden. Vi serverer grill- og sjømat med smaker fra Middelhavet.
                     </p>
                     <p>
-                        Restauranten har et eksotisk preg med palmer, flammer og havutsikt som gir en deilig følelse av ferie.
+                        Restauranten har et eksotisk preg med palmer, flammer og havutsikt som gir en deilig følelse av
+                        ferie.
                     </p>
                     <p>
-                        Innredningen er delikat og atmosfæren er varm. Her kan du sette deg tilbake og nyte smakfull mat og fantastisk utsikt.
+                        Innredningen er delikat og atmosfæren er varm. Her kan du sette deg tilbake og nyte smakfull mat
+                        og fantastisk utsikt.
                     </p>
-                     
+
                     <a href="https://book.easytablebooking.com/book/?id=8d940&lang=auto" target="_blank"
                         class="flex justify-center w-40 py-2 mt-4 uppercase border sm:hover:rounded-2xl transition-all"
                         style="border-color: white; color: white">
@@ -275,13 +315,13 @@
                         </div>
                 </details>
                 <details id="grill" open
-                    class="sm:w-md w-full gap-5 pl-[10px] border-l-4 border-secondary-default  mx-2 sm:mx-5 my-4 sm:my-5"
-                    >
+                    class="sm:w-md w-full gap-5 pl-[10px] border-l-4 border-secondary-default  mx-2 sm:mx-5 my-4 sm:my-5">
                     <summary
                         class="font-bold text-3xl text-secondary-default mb-5 border-b-4 w-fit px-2 pb-1 border-secondary-default select-none cursor-pointer">
                         Main Courses (Grill)
                     </summary>
-                    <p class="font-semibold mb-5 opacity-60">(ALL THE MAIN COURSES ARE SERVED WITH SAUTEED VEGETABLES & SAUCE)</p>
+                    <p class="font-semibold mb-5 opacity-60">(ALL THE MAIN COURSES ARE SERVED WITH SAUTEED VEGETABLES &
+                        SAUCE)</p>
                     <div class="mr-2 flex-style-menu gap-4 max-w-full">
                         <div class="p-[10px] pr-1 bg-primary_clr rounded-lg">
                             <div class="flex flex-col pl-5 gap-2">
@@ -321,7 +361,8 @@
                                     3. BEEF TENDERLOIN
                                 </h3>
                                 <p class="text-sm sm:text-base max-w-xs sm:max-w-md">
-                                    Roasted potatoes, micro greens and served with mushroom and peppersauce or red wine sauce
+                                    Roasted potatoes, micro greens and served with mushroom and peppersauce or red wine
+                                    sauce
                                 </p>
                                 <p class="text-xs opacity-60">
                                     Allergy: 1,7
@@ -400,7 +441,7 @@
                                 </p>
                             </div>
                         </div>
-                        
+
                     </div>
                 </details>
                 <details id="pasta"
@@ -516,16 +557,16 @@
                                 </div>
                             </div>
                         </div>
-                    
+
                 </details>
             </div>
 
             <P class="max-w-[442px] sm:w-md w-full text-primary_clr-light gap-5 pl-[10px] mx-2 sm:mx-5 my-4 sm:my-5">
-                    <span class="font-bold text-secondary-default">ALLERGENS:</span> 
-                    <br>
-                    1. Cereals containing gluten 2. Crustaceans 3. Egg 4. Fish 5. Peanuts 6. Soya beans,
-                    7. Milk 8. Nuts 9. Celery 10. Mustard 11. Sesame seeds 12. Sulphur Dioxide 13. Lupin 14. Molluscs
-                </P>
+                <span class="font-bold text-secondary-default">ALLERGENS:</span>
+                <br>
+                1. Cereals containing gluten 2. Crustaceans 3. Egg 4. Fish 5. Peanuts 6. Soya beans,
+                7. Milk 8. Nuts 9. Celery 10. Mustard 11. Sesame seeds 12. Sulphur Dioxide 13. Lupin 14. Molluscs
+            </P>
         </section>
     </main>
     <footer id="kontakt"
@@ -540,7 +581,7 @@
                 Sørengkaia 69, 0194 Oslo
                 <img class="absolute top-1 right-[-30px] h-5" src="./img/svg/pin.svg" alt="pinpoint" />
             </a>
-            
+
         </div>
         <div class="w-full h-px lg:hidden bg-primary_clr-light mt-1 max-w"></div>
         <div class="flex-col flex-1 flex max-w-xs py-5">
@@ -561,7 +602,7 @@
             <p class="text-secondary-default text-lg opacity-50 pl-2 pt-[2px]">
                 Bar &amp; Lounge: Man- Søn 11.00 - 00.30
             </p>
-            
+
         </div>
         <div class="w-full h-px lg:hidden bg-primary_clr-light mt-1"></div>
         <div class="flex-col flex-1 flex max-w-xs py-5">
