@@ -126,7 +126,7 @@ languagePrompt.addEventListener("click", () => {
                                     3 pcs served with citron, shallots and vinegar.
                                 </p>
                                 <p class="text-xs opacity-60">
-                                    Allergen: 14
+                                    Allergy: 14
                                 </p>
                                 <p class="text-sm sm:text-base opacity-90">
                                     179<span class="text-xs">kr</span>
@@ -142,7 +142,7 @@ languagePrompt.addEventListener("click", () => {
                                     Halibut, mango, chili, coriander, lime and pomegranate.
                                 </p>
                                 <p class="text-xs opacity-60">
-                                    Allergen: 1,2,7,9
+                                    Allergy: 1,2,7,9
                                 </p>
                                 <p class="text-sm sm:text-base opacity-90">
                                     179<span class="text-xs">kr</span>
@@ -158,7 +158,7 @@ languagePrompt.addEventListener("click", () => {
                                     Mashed potatoes and celery with chili lobster sauce.
                                 </p>
                                 <p class="text-xs opacity-60">
-                                    Allergen: 1,2,7,9
+                                    Allergy: 1,2,7,9
                                 </p>
                                 <p class="text-sm sm:text-base opacity-90">
                                     179<span class="text-xs">kr</span>
@@ -174,7 +174,7 @@ languagePrompt.addEventListener("click", () => {
                                     Homemade marinated salmon and gremolada.
                                 </p>
                                 <p class="text-xs opacity-60">
-                                    Allergen: 1,3,7
+                                    Allergy: 1,3,7
                                 </p>
                                 <p class="text-sm sm:text-base opacity-90">
                                     200<span class="text-xs">kr</span>
@@ -190,7 +190,7 @@ languagePrompt.addEventListener("click", () => {
                                     Argentinian scampi, garlic, persille and white wine.
                                 </p>
                                 <p class="text-xs opacity-60">
-                                    Allergi: 2
+                                    Allergy: 2
                                 </p>
                                 <p class="text-sm sm:text-base opacity-90">
                                     189<span class="text-xs">kr</span>
@@ -206,7 +206,7 @@ languagePrompt.addEventListener("click", () => {
                                     Mussels, garlic, parsley, cherry tomato and frites.
                                 </p>
                                 <p class="text-xs opacity-60">
-                                    Allergi: 2,4,14
+                                    Allergy: 2,4,14
                                 </p>
                                 <p class="text-sm sm:text-base opacity-90">
                                     230<span class="text-xs">kr</span>
@@ -222,7 +222,7 @@ languagePrompt.addEventListener("click", () => {
                                     Beef fillet, oilve oil, pinenuts, microgreens and cherry tomato confit.
                                 </p>
                                 <p class="text-xs opacity-60">
-                                    Allergi: 7,8
+                                    Allergy: 7,8
                                 </p>
                                 <p class="text-sm sm:text-base opacity-90">
                                     199<span class="text-xs">kr</span>
@@ -238,7 +238,7 @@ languagePrompt.addEventListener("click", () => {
                                     Roast beef served with tuna mayonnaise and capers.
                                 </p>
                                 <p class="text-xs opacity-60">
-                                    Allergi: 1,,3,4
+                                    Allergy: 1,,3,4
                                 </p>
                                 <p class="text-sm sm:text-base opacity-90">
                                     229<span class="text-xs">kr</span>
@@ -254,7 +254,7 @@ languagePrompt.addEventListener("click", () => {
                                     Marinated fresh tomato, fresh borrata, basilikum, olive oil and olives.
                                 </p>
                                 <p class="text-xs opacity-60">
-                                    Allergi: 7
+                                    Allergy: 7
                                 </p>
                                 <p class="text-sm sm:text-base opacity-90">
                                     179<span class="text-xs">kr</span>
@@ -272,7 +272,7 @@ languagePrompt.addEventListener("click", () => {
                                     manchego and gorgonzola.
                                 </p>
                                 <p class="text-xs opacity-60">
-                                    Allergi: 1,7,12
+                                    Allergy: 1,7,12
                                 </p>
                                 <p class="text-sm sm:text-base opacity-90">
                                     449/749<span class="text-xs">kr</span>
