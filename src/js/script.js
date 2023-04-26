@@ -107,7 +107,7 @@ languagePrompt.addEventListener("click", () => {
         <h2 class="mx-2 sm:mx-5 mb-10 pt-20 font-bold text-4xl sm:text-5xl text-secondary-default">
                 Menu
             </h2>
-            <p class="mx-2 sm:mx-5  text-secondary-default font-semibold opacity-80">Allergens are listed at bottom.</p>
+            <p class="mx-2 sm:mx-5  text-secondary-default font-semibold opacity-80">Allergens are listed at the bottom.</p>
             <div class="flex flex-wrap text-secondary-default">
 
                 <details id="starters"
@@ -461,7 +461,7 @@ languagePrompt.addEventListener("click", () => {
                                     Grilled fish with lemon butter sauce and mix salad.
                                 </p>
                                 <p class="text-xs opacity-60">
-Allergy: 4,7,9
+                                    Allergy: 4,7,9
                                 </p>
                                 <p class="text-sm sm:text-base opacity-90">
                                     399<span class="text-xs">kr</span>
@@ -599,7 +599,7 @@ Allergy: 4,7,9
                                     Ravioli with porcini and cheese, truffle oil and parmesan.
                                 </p>
                                 <p class="text-xs opacity-60">
-                                    Allergi: 1,3,7,8
+                                    Allergy: 1,3,7,8
                                 </p>
                                 <p class="text-sm sm:text-base opacity-90">
                                     279<span class="text-xs">kr</span>
@@ -615,7 +615,7 @@ Allergy: 4,7,9
                                     Truffel salami, spianata calabrese, serrano, mortadella, parmigiano, pecorino, manchego and gorgonzola.
                                 </p>
                                 <p class="text-xs opacity-60">
-                                    Allergi: 1,7,12
+                                    Allergy: 1,7,12
                                 </p>
                                 <p class="text-sm sm:text-base opacity-90">
                                     279<span class="text-xs">kr</span>
@@ -631,7 +631,7 @@ Allergy: 4,7,9
                                     Sunflower seeds, tomato, basil, feta cheese and mint.
                                 </p>
                                 <p class="text-xs opacity-60">
-                                    Allergi: 1,3,7,8
+                                    Allergy: 1,3,7,8
                                 </p>
                                 <p class="text-sm sm:text-base opacity-90">
                                     279<span class="text-xs">kr</span>
@@ -805,11 +805,6 @@ Allergy: 4,7,9
                                     Allergy: 1,3,4,6,10,12
                                 </p>
                                 <p class="text-sm sm:text-base opacity-90">
-
-                                <p class="text-xs opacity-60">
-                                    Allergi: 1,3,4,6,10,12
-                                </p>
-                                <p class="text-sm sm:text-base opacity-90">
                                     209<span class="text-xs">kr</span>
                                 </p>
                             </div>
@@ -823,7 +818,7 @@ Allergy: 4,7,9
                                     Romano salad, cherry tomato, cocumber and citronette.
                                 </p>
                                 <p class="text-xs opacity-60">
-                                    Allergi: 2,4,14
+                                    Allergy: 2,4,14
                                 </p>
                                 <p class="text-sm sm:text-base opacity-90">
                                     209<span class="text-xs">kr</span>
