@@ -61,7 +61,7 @@ languagePrompt.addEventListener("click", () => {
                     menu
                 </a>
 
-                <a href="https://book.easytablebooking.com/book/?id=8d940&lang=auto" target="_blank"
+                <a href="https://panoramarestaurant.superbexperience.com/" target="_blank"
                     class="flex justify-center py-2 w-36 uppercase border sm:hover:rounded-2xl transition-all"
                     style="border-color: white; color: white">
                     booking
@@ -96,7 +96,7 @@ languagePrompt.addEventListener("click", () => {
                         The decor is delicate and the atmosphere is warm. Here you can sit back and enjoy tasty food and
                         fantastic views.
                     </p>
-                    <a href="https://book.easytablebooking.com/book/?id=8d940&lang=auto" target="_blank"
+                    <a href="https://panoramarestaurant.superbexperience.com/" target="_blank"
                         class="flex justify-center w-40 py-2 mt-4 uppercase border sm:hover:rounded-2xl transition-all"
                         style="border-color: white; color: white">Book table now</a>
 
@@ -1013,19 +1013,19 @@ languagePrompt.addEventListener("click", () => {
         `;
     } else {
         languagePrompt.innerHTML = "ENG";
-        infoModalCtAp.innerHTML = "From April 1st to Mai 31th";
-        infoModalCtAh2.innerHTML = "2 hours Free parking when you dine with us";
-        animateButton.innerHTML = "More information";
+        infoModalCtAp.innerHTML = "Fra 1. april til 31. mai";
+        infoModalCtAh2.innerHTML = "2t Gratis parkering når du spiser hos oss.";
+        animateButton.innerHTML = "Mer informasjon";
         messageBoxContent.innerHTML = `
-                <div class=" bg-primary_clr-dark bg-opacity-40 flex flex-col gap-4 p-8 sm:rounded-2xl">
-                    <p class="text-primary_clr-light font-semibold text-xl">Free parking when you dine with us</p>
-                    <p class="text-primary_clr-light">Panorama Restaurant &amp; -bar offers 2 hours of free parking
-                        between 16.00 - 24.00 in April and May.</p>
-                    <p class="text-primary_clr-light"><span class="font-semibold">The offer is valid</span> for those
-                        who park at Sørenga parking garage and dine at our restaurant.</p>
-                    <p class="text-primary_clr-light"><span class="font-semibold">To get free parking</span>, simply
-                        register with a tablet at our restaurant upon arrival.</p>
-                </div>
+                    <p class="text-primary_clr-light font-semibold text-xl">Gratis parkering når du spiser hos oss.</p>
+                    <p class="text-primary_clr-light">Panorama Restaurant &amp; -bar tilbyr to timer gratis parkering
+                        mellom 16.00 - 24.00 i april og Mai.</p>
+                    <p class="text-primary_clr-light">
+                        <span class="font-semibold">Tilbudet gjelder</span> for dem som parkerer på Sørenga P-hus og spiser på vår restaurant.
+                    </p>
+                    <p class="text-primary_clr-light"><span class="font-semibold">For å få gratis parkering</span>,
+                        bare registrer deg med tablet på restauranten ved ankomst.</p>
+                
         `;
         navigation.innerHTML = `
             <div
@@ -1036,7 +1036,7 @@ languagePrompt.addEventListener("click", () => {
                     meny
                 </a>
 
-                <a href="https://panoramarestaurant.superbexperience.com/?fbclid=IwAR2gFCHfmfO04JmzInQnjtlCJRGBYs9PzCDt7tTJZAi_1GDU8yptoCQaFTA" target="_blank"
+                <a href="https://panoramarestaurant.superbexperience.com/" target="_blank"
                     class="flex justify-center py-2 w-36 uppercase border sm:hover:rounded-2xl transition-all"
                     style="border-color: white; color: white;">
                     booking
@@ -1071,7 +1071,7 @@ languagePrompt.addEventListener("click", () => {
                         og fantastisk utsikt.
                     </p>
 
-                    <a href="https://book.easytablebooking.com/book/?id=8d940&lang=auto" target="_blank"
+                    <a href="https://panoramarestaurant.superbexperience.com/" target="_blank"
                         class="flex justify-center w-40 py-2 mt-4 uppercase border sm:hover:rounded-2xl transition-all"
                         style="border-color: white; color: white">
                         Book bord nå
