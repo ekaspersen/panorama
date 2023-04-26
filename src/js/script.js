@@ -47,7 +47,7 @@ languagePrompt.addEventListener("click", () => {
                     <p class="text-primary_clr-light">Panorama Restaurant &amp; -bar offers 2 hours of free parking
                         between 16.00 - 24.00 in April and May.</p>
                     <p class="text-primary_clr-light"><span class="font-semibold">The offer is valid</span> for those
-                        who park at Sørenga parking garage and dine at our restaurant.</p>
+                        who park at Sørenga P-hus and dine at our restaurant.</p>
                     <p class="text-primary_clr-light"><span class="font-semibold">To get free parking</span>, simply
                         register with a tablet at our restaurant upon arrival.</p>
                 </div>
