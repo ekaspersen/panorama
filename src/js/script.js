@@ -289,8 +289,6 @@ languagePrompt.addEventListener("click", () => {
                         class="font-bold text-3xl text-secondary-default mb-5 border-b-4 w-fit px-2 pb-1 border-secondary-default select-none cursor-pointer">
                         Grill
                     </summary>
-                    <p class="font-semibold mb-5 opacity-60">(ALL MAIN COURSES ARE SERVED WITH SAUTÉED VEGETABLES AND
-                        SAUCE)</p>
                     <div class="mr-2 flex-style-menu gap-4 max-w-full">
                         <div class="p-[10px] pr-1 bg-primary_clr rounded-lg">
                             <div class="flex flex-col pl-5 gap-2">
@@ -1264,7 +1262,6 @@ languagePrompt.addEventListener("click", () => {
                         class="font-bold text-3xl text-secondary-default mb-5 border-b-4 w-fit px-2 pb-1 border-secondary-default select-none cursor-pointer">
                         Grill
                     </summary>
-                    <p class="font-semibold mb-5 opacity-60">(ALLE HOVEDRETTENE SERVERES MED SAUTERTE GRØNNSAKER OG SAUS)</p>
                     <div class="mr-2 flex-style-menu gap-4 max-w-full">
                         <div class="p-[10px] pr-1 bg-primary_clr rounded-lg">
                             <div class="flex flex-col pl-5 gap-2">
