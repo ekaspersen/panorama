@@ -51,10 +51,7 @@
         rgba(0, 0, 0, 0.3) 67.71%,
         rgba(0, 0, 0, 0) 100%
     );
-} /* LOOK HERE IF YOU VISIT SOME TIME
-details div > div {
-    margin-bottom: auto;
-}*/
+}
 .bg-hero-banner {
     background-repeat: no-repeat;
     background-position: center;

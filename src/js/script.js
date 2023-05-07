@@ -12,7 +12,6 @@ animateButton.addEventListener("click", () => {
     body.style.height = "100vh";
     body.classList.add("overflow-hidden");
 });
-
 closeButton.addEventListener("click", () => {
     overlay.classList.add("hidden");
     messageBox.classList.add("hidden");
