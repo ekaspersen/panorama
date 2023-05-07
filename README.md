@@ -8,8 +8,8 @@ run start project and install dependencies (npm i\*)
 understand tailwindCSS and happy coding.
 
 IN TERMINAL\*
-TERMINAL: npm i
 
+TERMINAL: npm i
 -   Installs devDependencies
 
 TERMINAL: npm run dev
