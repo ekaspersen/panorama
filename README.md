@@ -21,5 +21,5 @@ TERMINAL: npm run build
 TERMINAL: npm run preview
 -   similar to developer mode, but it shows the optimised dist folder instead of the src folder.
 
-Author: Eskil K. Hagen
+Author: Eskil K. Hagen,
 Front End Developer
